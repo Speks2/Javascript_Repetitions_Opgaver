@@ -28,3 +28,4 @@ Start med at clone projektet fra denne adresse: ([Github](https://github.com/TCA
 Herefter skulle du gerne kunne gå i gang med lektion 1 og når du er færdig skal du huske at lave et commit, indtaste en commit besked og pushe dine ændringer til github.
 
 Du er nu klar til at gå i gang med lektionerne.
+Test
