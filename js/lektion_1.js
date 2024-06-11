@@ -14,6 +14,24 @@ function fullName(firstName, lastName) {
 }
 
 // Opgave 2
+function toggleVisibility(elementId, className) {
+  var element = document.getElementById(elementId);
+  if (element) {
+      element.classList.toggle(className);
+  }
+}
+//Opgave 3
+function toggleColor(elementId, className) {
+  var element = document.getElementById(elementId)
+  if (element) {
+    element.classList.toggle(className);
+}
+}
+//Call the function
+colorChange('colorChange', 'color');
+
+//Kalder funktion
+toggleVisibility('myElement', 'hidden');
 
 // Function Calls
 fullName("Ukendt", "Person");
