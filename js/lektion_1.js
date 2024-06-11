@@ -13,6 +13,9 @@ function fullName(firstName, lastName) {
   L1_1.appendChild(newH3);
 }
 
+// Function Calls
+fullName("Ukendt", "Person");
+
 // Opgave 2
 function toggleVisibility(elementId, className) {
   var element = document.getElementById(elementId);
@@ -20,18 +23,27 @@ function toggleVisibility(elementId, className) {
       element.classList.toggle(className);
   }
 }
-//Opgave 3
-function toggleColor(elementId, className) {
-  var element = document.getElementById(elementId)
-  if (element) {
-    element.classList.toggle(className);
-}
-}
-//Call the function
-colorChange('colorChange', 'color');
-
 //Kalder funktion
 toggleVisibility('myElement', 'hidden');
 
-// Function Calls
-fullName("Ukendt", "Person");
+//Opgave 3
+function toggleColorAndMessage(elementId, colorClass, message) {
+  var element = document.getElementById(elementId);
+  element.classList.toggle('colored')
+  if (element.classList.contains('colored')) {
+     
+          alert(message);
+      }  {
+          alert('Farven er fjernet');
+      
+  }
+}
+
+// Kalder function
+document.getElementById('toggleButton').addEventListener('click', function() {
+  toggleColorAndMessage('myElement1', 'colored', 'Farven er ændret!');
+});
+
+// Opgave 4 
+
+
