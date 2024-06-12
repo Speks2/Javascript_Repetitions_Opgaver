@@ -61,5 +61,13 @@ function clickCounter() {
 
   // Opgave 5
   // Word lengt counter
-  
+  let text = "I love cheese!";
+  let lenght = text.length;
+  document.getElementById("word").innerHTML = lenght + " is " + text;
+
+  // Opgave 6
+ // Function to remove vokals 
+ function getElementById('vocals') {
+  console.log('console')
+ }
 
