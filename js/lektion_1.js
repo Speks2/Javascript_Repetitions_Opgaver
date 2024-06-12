@@ -45,5 +45,21 @@ document.getElementById('toggleButton').addEventListener('click', function() {
 });
 
 // Opgave 4 
+//Click counter
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number (localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Button has been clicked  " + localStorage.clickcount + "time(s).";
+  } else {
+      document.getElementById("result").innerHTML  = "Sorry your search engine does not support web storage.";
+     }
+  }
 
+  // Opgave 5
+  // Word lengt counter
+  
 
