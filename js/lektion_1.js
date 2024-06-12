@@ -67,7 +67,20 @@ function clickCounter() {
 
   // Opgave 6
  // Function to remove vokals 
- function getElementById('vocals') {
-  console.log('console')
- }
+ function removeVowels(word) {
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  
+  // Filterer ud alle vokaler
+  let cleanedWord = word.split('').filter(char => !vowels.includes(char)).join('');
+  
+  return cleanedWord;
+}
+
+
+let word = "Eksempel";
+let cleanedWord = removeVowels(word);
+
+// For at vise i DOMen
+document.getElementById('output').textContent = cleanedWord;
+
 
