@@ -104,3 +104,12 @@ function emailChecker(email) {
 };
 
 emailChecker('test2@gmail.com')
+
+//Lektion 2: Opgave 3
+function stringLenght(element) {
+ if (element.length > 2 ) {
+  document.getElementById('string1').innerText = 'Bigger than 2';
+ }
+}
+
+stringLenght('Ost');
