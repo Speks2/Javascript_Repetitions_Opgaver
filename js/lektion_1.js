@@ -113,3 +113,5 @@ function stringLenght(element) {
 }
 
 stringLenght('Ost');
+
+//Lektion 2: Opgave 4
