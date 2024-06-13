@@ -92,3 +92,15 @@ function værdiType(argument) {
 }
 
 værdiType(5);
+
+//Lektion 2: Opgave 2 
+function emailChecker(email) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+    document.getElementById('emails').innerText = 'This email works!'
+  }
+  else {
+     document.getElementById('emails').innerText = 'Does not work' 
+  }
+};
+
+emailChecker('test2@gmail.com')
