@@ -76,11 +76,19 @@ function clickCounter() {
   return cleanedWord;
 }
 
-
 let word = "Eksempel";
 let cleanedWord = removeVowels(word);
 
 // For at vise i DOMen
 document.getElementById('output').textContent = cleanedWord;
 
+//Lektion 2: Opgave 1
+// Lav en funktion der kan tjekke om en værdi (argumentet) er en string eller et tal og vise det i DOM´en.
+//    Det skal gerne ende ud i at der eks. står: 123 er af typen: number, i DOM´en.
+function værdiType(argument) {
+  let myType = typeof argument 
+  document.getElementById('string').innerText = argument + ' Argument er af en type ' + myType
 
+}
+
+værdiType(5);
