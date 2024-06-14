@@ -115,3 +115,33 @@ function stringLenght(element) {
 stringLenght('Ost');
 
 //Lektion 2: Opgave 4
+ function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+function updateDivWithRandomNumber() {
+  const randomNumber = getRandomInt(32); 
+  document.getElementById('stringNumber').innerText = 'The number is ' + randomNumber;
+}
+
+document.getElementById('numberGiver').addEventListener('click', updateDivWithRandomNumber);
+
+//Lektion 2: opgave 5
+function generateRandomRGB() {
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  return `rgb(${red}, ${green}, ${blue})`;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const generateButton = document.getElementById('generateButton');
+  const colorBox = document.getElementById('colorBox');
+  
+  generateButton.addEventListener('click', () => {
+      const randomColor = generateRandomRGB();
+      colorBox.style.backgroundColor = randomColor;
+      colorBox.textContent = randomColor;
+  });
+});
+// Random rgb color generator

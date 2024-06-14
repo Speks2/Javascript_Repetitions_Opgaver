@@ -41,3 +41,14 @@ body {
 
 
 /////////////////////////
+ .color-box {
+width: 200px;
+height: 200px;
+margin: 20px auto;
+border-radius: 8px;
+color: white;
+font-size: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
